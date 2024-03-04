@@ -4,7 +4,7 @@
   "description": "Bon, on a quelques jeux qui traînent, c'est cool ! Mais c'est le bazar !",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node-dev index.js"
   },
   "keywords": [],
   "author": "",
