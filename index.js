@@ -29,8 +29,6 @@ app.get('/', (req, res) => {
   app.get('/game/:activeGame', (req,res) => {
 	const game = games.find((game) => game.name === req.params.activeGame);
 
-	console.log(games);
-	
 	res.render(`${game.name}`, {css : `/css/${game.cssFile}`});
 })
 
