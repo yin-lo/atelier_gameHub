@@ -11,6 +11,7 @@ app.set('view engine', 'ejs')
 app.use(express.static('public'));
 
 const games = require('./games.json');
+app.locals.games = games;
 
 app.get('/', (req, res) => {
 	res.render('index.ejs', {css : ''});
@@ -28,9 +29,9 @@ app.get('/', (req, res) => {
   app.get('/game/:activeGame', (req,res) => {
 	const game = games.find((game) => game.name === req.params.activeGame);
 
-	console.log(game.name);
+	console.log(games);
 	
-	res.render(`${game.name}`, {css : `${game.cssFile}`});
+	res.render(`${game.name}`, {css : `/css/${game.cssFile}`});
 })
 
 
