@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <title>GameHub</title>
     <link rel="stylesheet" href="/css/style.css">
+    <% if (css !== '') { %>
+      <link rel="stylesheet" href="<%= css %>">
+      <% } %>
     
-    <link rel="stylesheet" href="<%= css %>">
   </head>
 
   <body>
@@ -15,6 +17,9 @@
       <nav>
         <ul>
           <li><a href="/">Accueil</a></li>
+          <%# for( const game of games) { %>
+          
+          <%# } %>
           <li><a href="/game/diceRoller">Dice Roller</a></li>
           <li><a href="/game/fourchette">Jeu de la Fourchette</a></li>
         </ul>
