@@ -5,16 +5,13 @@ const app = express();
 app.set('view engine', 'ejs');
 app.set('views', './views');
 
-app.set('views', './views');
-app.set('view engine', 'ejs')
-
 app.use(express.static('public'));
 
 const games = require('./games.json');
 app.locals.games = games;
 
 app.get('/', (req, res) => {
-	res.render('index.ejs', {css : ''});
+	res.render('index', {css : ''});
 });
 
 
@@ -37,7 +34,8 @@ app.get('/', (req, res) => {
 	}
 })
 
-// app.get('/game/404', (req, res) => { res.render()})
+app.get('/game/404', (req, res) => { 
+	res.render('page404')})
 
 
 app.listen(PORT, () => {

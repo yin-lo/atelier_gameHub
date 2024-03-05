@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
+
+body{
+	background: linear-gradient();
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+}
+
+.title {
+	font-family: 'UnifrakturMaguntia', cursive;
+	color: rgb(128, 19, 19);
+	font-size: 6rem;
+	text-align: center;
+	margin: 1rem;
+	animation :tracking-in 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both; 
+}
+
+@keyframes tracking-in{
+	0% {
+		letter-spacing: -0.5em;
+		transform: translateZ(-700px) translateY(500px);
+		opacity: 0;
+	  }
+	  40% {
+		opacity: 0.6;
+	  }
+	  100% {
+		transform: translateZ(0) translateY(0);
+		opacity: 1;
+	  }
+}
+
+.pentacle {
+	object-fit: cover;
+	/* width: 90%; */
+	height: 80vh;
+	display: inline-block;
+	margin-inline: auto;
+	/* animation :round 30s linear infinite; */
+	transform-origin: center;
+}
+@keyframes round {
+	
+	to{
+		transform: rotate(360deg);
+	}
+
+}
+
+.return {
+	font-family: 'UnifrakturMaguntia', cursive;
+	position: absolute;
+	left: auto;
+	top: 50%;
+	text-decoration: none;
+	padding: 8px 16px;
+	border: solid 2px black;
+	background-color: brown;
+	color: white;
+	border-radius: 16px;
+	font-size: 2rem;
+	box-shadow: 5px 5px 10px black;
+	transition: all 0.3s ease-in-out;
+}
+
+.return:hover{
+	color: black;
+	background-color: grey;
+	transform: translate(5px, 5px);
+	box-shadow: none;
+}
