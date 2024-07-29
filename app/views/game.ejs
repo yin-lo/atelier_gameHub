@@ -1,0 +1,13 @@
+<%- include("partials/header") %>
+
+    <h3>
+        <%= locals.game.title %>
+    </h3>
+
+    <% if(locals.game.name=="diceRoller" ){ %>
+        <%- include("partials/diceRoller") %>
+    <% } %>
+
+<script src="/js/<%= locals.game.jsFile %>"></script>
+
+<%- include("partials/footer") %>

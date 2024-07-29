@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>GameHub</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Si je suis sur la page "diceRoller" alors j'ajoute ce fichier -->
+    <% if(locals.game && locals.game.name == "diceRoller"){ %>
+    <!--  if(locals.game?.name == "diceRoller"){  -->
+        <link rel="stylesheet" href="/css/diceRoller.css">
+    <% } %>
+  </head>
+
+  <body>
+    <header>
+      <h1>GameHub</h1>
+      <nav>
+        <ul>
+          <li><a href="/">Accueil</a></li>
+          <!-- <li><a href="/game/diceRoller">Dice Roller</a></li>
+          <li><a href="/game/fourchette">Fourchette</a></li> -->
+          <% for(const item of games){ %>
+            <li><a href="/game/<%= item.name %>"><%= item.title %></a></li>
+          <% } %>
+        </ul>
+      </nav>
+    </header>
