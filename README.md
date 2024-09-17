@@ -75,5 +75,6 @@ npm run start
 ```bash
 node index.js
 ```
-## En ligne
-[Atelier de GameHub](https://yin-lo.github.io/atelier_gameHub/)
+## Visuel
+
+![Atelier de GameHub]()
