@@ -14,16 +14,6 @@ app.get('/', (req, res) => {
 	res.render('index', {css : ''});
 });
 
-
-// app.get('/game/fourchette', (req, res) => {
-//     res.render('fourchette', {css : ''});
-//   }); 
-
-// app.get('/game/diceRoller', (req, res) => {
-//     res.render('diceRoller', {css : '/css/diceRoller.css'});
-//   }); 
-
-
   app.get('/game/:activeGame', (req,res) => {
 	const game = games.find((game) => game.name === req.params.activeGame);
 
