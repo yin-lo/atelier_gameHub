@@ -1,7 +1,7 @@
 {
-  "name": "s03-atelier-gamehub-yin-lo",
+  "name": "atelier-gamehub-yin-lo",
   "version": "1.0.0",
-  "description": "Bon, on a quelques jeux qui traînent, c'est cool ! Mais c'est le bazar !",
+  "description": "Plateforme de jeu en ligne",
   "main": "index.js",
   "scripts": {
     "start": "node-dev index.js"
@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "ejs": "^3.1.9",
-    "express": "^4.18.3"
+    "express": "^4.18.3",
+    "node-dev": "^8.0.0"
   }
 }
