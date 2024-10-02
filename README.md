@@ -68,7 +68,7 @@ npm i --save dev node-dev
 NB : si la version de node est supérieure à 18.11.0, il est possible d'utiliser la commande ci-dessous au lieu d'installer node-dev
 
 ```bash
-node --watch
+node --watch index.js
 ```
 
 4. Si installation de node-dev, lancer le serveur local : 
